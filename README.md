@@ -8,7 +8,7 @@ A collection of git commands to provide some common, useful functionality when m
 
 ## Commands
 
-* `git branch-graph <remote> [<branch>]`
+* `git branch-graph <remote>`
 
     Draws a graph of the relationships between branches on the specified remote.
 
@@ -20,6 +20,10 @@ A collection of git commands to provide some common, useful functionality when m
 
     * Local branches that are no longer on the specified remote
 
+    * Local branches that are fully merged into other remote branches
+
     * Remote branches that are fully merged into other remote branches
+
+    * Local and remote branches that haven't had a commit for 3 months
 
     If the `-l` option is specified, only local branches are checked.
